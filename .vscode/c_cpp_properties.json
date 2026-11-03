@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "name":                 "Win64",
+            "includePath":          ["${workspaceFolder}", 
+                                     "${workspaceFolder}/INC",
+                                    "D:/Program Libraries/SFML-3.1.0/include"],
+                                
+            "defines":              ["_DEBUG", "UNICODE", "_UNICODE"],
+            "compilerPath":         "C:/WinLibs/mingw64/bin/g++.exe",
+            "cStandard":            "c17",
+            "cppStandard":          "c++17",
+            "intelliSenseMode":     "windows-gcc-x64",
+            "browse": {
+                "path": ["${workspaceFolder}", 
+                        "${workspaceFolder}/INC",
+                        "D:/Program Libraries/SFML-3.1.0/include"],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            }
+        }
+    ],
+    "version": 4
+}

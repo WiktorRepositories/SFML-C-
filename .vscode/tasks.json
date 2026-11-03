@@ -1,0 +1,44 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "Build SFML project",
+            "command": "C:/WinLibs/mingw64/bin/g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "-std=c++17",
+                "-Wall",
+                "-Wextra",
+
+                // Prototypes projects
+                //"${workspaceFolder}/INC/x14_Project_intro_/*.h",
+                //"${workspaceFolder}/INC/x14_Project_intro_/*.cpp",
+
+                // INclude files for project with menu
+                "${workspaceFolder}/INC/x15_ProjectMenu/constants/*.h",
+                "${workspaceFolder}/INC/x15_ProjectMenu/gamelib/*.h",
+                "${workspaceFolder}/INC/x15_ProjectMenu/gamelib/*.cpp",
+                "${workspaceFolder}/INC/x15_ProjectMenu/*.h",
+                "${workspaceFolder}/INC/x15_ProjectMenu/*.cpp",
+
+                "${workspaceFolder}/main.cpp",
+
+                // SFML libraries 
+                "-I", "D:/Program Libraries/SFML-3.1.0/include",
+                "-L", "D:/Program Libraries/SFML-3.1.0/lib",
+                "-lsfml-graphics",
+                "-lsfml-window",
+                "-lsfml-system",
+
+                "-o",
+                "${workspaceFolder}/xOutput/program.exe"
+            ],
+            "options": {"cwd": "${workspaceFolder}"},
+            "problemMatcher": ["$gcc"],
+            "group": {"kind": "build", "isDefault": true},
+            "detail": "SFML 3 build using GCC 14.2.0"
+        }
+    ]
+}
